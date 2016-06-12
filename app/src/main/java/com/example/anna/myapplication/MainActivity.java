@@ -87,74 +87,7 @@ public class MainActivity extends AppCompatActivity {
         }); // get list of Audio
     }
 
-    // get titles from list <Audio> if success, else - example simple items
-    private String[] getDataSetTitles(List<Audio> audios) {
 
-        String[] mDataSet = new String[100];
-        if (audios != null) {
-            for (int i = 0; i < audios.size() - 1; i++) {
-
-                mDataSet[i] = audios.get(i).getTitle();
-            }
-        } else {
-            for (int i = 0; i < 100; i++) {
-
-                mDataSet[i] = "item " + i;
-            }
-        }
-        Log.d(TAG, "getDataSetTitles: ok");
-        return mDataSet;
-    }
-    private String[] getExampleDataString() {
-
-        String[] mDataSet = new String[100];
-                   for (int i = 0; i < 100; i++) {
-
-                mDataSet[i] = "item " + i;
-            }
-
-        Log.d(TAG, "getExampleDataString: ok");
-        return mDataSet;
-    }
-
-    private int[] getExampleDataInt() {
-
-        int[] mDataSet = new int[100];
-        for (int i = 0; i < 100; i++) {
-
-            mDataSet[i] =  i+i;
-        }
-
-        Log.d(TAG, "getExampleDataInt: ok");
-        return mDataSet;
-    }
-
-    // get titles from list <Audio> if success, else - example simple items
-//    private String[] getDataSetUrls(List<Audio> audios) {
-//
-//        String[] mDataSetUrls = new String[audios.size() - 1];
-//        if (audios != null) {
-//            for (int i = 0; i < audios.size() - 1; i++) {
-//
-//                mDataSetUrls[i] = audios.get(i).getUrl();
-//            }
-//        }
-//        Log.d(TAG, "getDataSetUrls: ok");
-//        return mDataSetUrls;
-//    }
-
-//    private int[] getDataSetDurations(List<Audio> audios) {
-//
-//        int[] mDataSetDurations = new int[audios.size() - 1];
-//        if (audios != null) {
-//            for (int i = 0; i < audios.size() - 1; i++) {
-//
-//                mDataSetDurations[i] = audios.get(i).getDuration();
-//            }
-//        }
-//        Log.d(TAG, "getDataSetDurations: ok");
-//        return mDataSetDurations;
-//    }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
